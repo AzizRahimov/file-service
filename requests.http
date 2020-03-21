@@ -1,0 +1,15 @@
+POST localhost:9994/api/files
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="hello"
+Content-Type: text/plain
+
+This is sparta
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="bye"
+Content-Type: text/plain
+
+I am a machine
+--WebAppBoundary--
+###
